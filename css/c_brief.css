@@ -356,11 +356,12 @@ footer ul li {float: left; margin-right: 20px;}
 footer p {clear: both;font-family: 'Sans-serif', cursive; letter-spacing: 1px; font-size: 15px; text-transform: lowercase;}
 
 /* profile */
-.profile {display:inline-block}
+/* .profile {display:inline-block}
 .profile .module {text-align: center; float:left; padding:20px; margin:20px;} 
-/* .profile {background: url(../img2/사진뭐넣지2.jpg)no-repeat center left 20%/cover; transition: all 1s;} */
 .profile {height: 350px; width: 1300px; box-sizing: border-box; margin-top: 150px; position:relative;}
-#m1{left:100px;}
 .profile .items {margin-left: 250px;}
+.core{font-weight: bold; font-size: 20px;} */
+
+.items {display: table; width: 100%; padding-bottom: 150px; padding-top: 50px;}
+.items .module {display: table-cell; vertical-align: middle; text-align: center; padding: 20px;}
 .core{font-weight: bold; font-size: 20px;}
-/* description */
