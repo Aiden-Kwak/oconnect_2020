@@ -5,6 +5,8 @@
 @ main.html
 - favicon
 - main header color (#000000)
+
+
 @ product.html
 - favicon
 - main header color (#000000)
