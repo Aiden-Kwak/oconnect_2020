@@ -32,3 +32,6 @@
 - done
 
 @ purchase.html
+
+@ all
+- title
