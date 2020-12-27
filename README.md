@@ -35,3 +35,5 @@
 
 @ all (Except. company-brief by aidenkwak)
 - title
+
+https://bit.ly/3nS7BAh
