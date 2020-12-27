@@ -23,3 +23,12 @@
 
 
 @ purchase.html
+-create
+
+#### 12.27.
+@ prod-intro.html
+- done
+ㄴ @ prod-videos (prod-main/prod-comp/prod-conn.html)
+- done
+
+@ purchase.html
