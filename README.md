@@ -33,5 +33,5 @@
 
 @ purchase.html
 
-@ all
+@ all (Except. company-brief by aidenkwak)
 - title
