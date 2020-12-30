@@ -1,5 +1,6 @@
 @charset "uft-8";
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Noto+Sans+KR&display=swap');
+
 /*reset*/
 *{margin: 0; padding: 0;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
@@ -15,7 +16,7 @@ body {font-family: 'Noto Sans KR', sans-serif; font-size: 14px;}
 .en {font-family: 'Bebas Neue', cursive;}
 
 /*header*/
-header {width: 100%; position: fixed; z-index: 1000; background:#000000;}
+header {width: 100%; position: fixed; z-index: 100; background:#000000;}
 .innerHeader {padding: 0 60px; height: 90px; transition: all 0.3s;}
 .innerHeader .logo {width: 150px; height: 36px; float: left;margin-top: 28px; transition: all 0.3s; }
 .innerHeader .logo a {display: block; width: 100%; height: 100%; position: relative;}
@@ -29,7 +30,6 @@ header {width: 100%; position: fixed; z-index: 100; background:#000000;}
 .innerHeader .logo a img {width: 100%; position: absolute; top:0; left: 0;transition: all 0.3s; }
 .innerHeader .logo a img:nth-child(2) {opacity: 0;}
 */
-
 /*gnb*/
 .gnb {position: absolute; left: 50%; transform: translateX(-50%); width: 800px;}
 .gnb > li {float: left; width: 20%; height: 90px; line-height: 90px; position: relative; transition: all 0.3s;}
@@ -135,7 +135,7 @@ header.on .gnb ul.inner.on {top: 60px;}
 
 /*contents*/
 .contents{position: relative; background: #fff; } 
-.contents .line {display: block; position: absolute; top:0; width: 1px; height: 80%; background: #eee;}
+.contents .line {display: block; position: absolute; top:0; width: 1px; height: 100%; background: #eee;}
 .contents .line.a{left: 25%;}
 .contents .line.b{left: 50%;}
 .contents .line.c{left: 75%;}
@@ -305,7 +305,7 @@ header.on .gnb ul.inner.on {top: 60px;}
 .contents .news .newsList li:first-child a .category {background: #19293d;}
 .contents .news .newsList li a .subject {display: block; font-size: 20px; font-weight: bold; color:#333;}
 .contents .news .newsList li a .date {font-size:18px; color:#999; font-weight: normal; margin:20px; display: block;}
-.contents .news .newsList li a .desc {margin-left: 110px; display: block; text-align: justify; font-size: }
+.contents .news .newsList li a .desc {margin-left: 110px; display: block; text-align: justify; font-size: 25px;}
 
 /*호버효과*/
 .contents .news .newsList li a:hover {background: #fff; box-shadow: 4px 4px 10px rgba(0,0,0,0.2);}
@@ -355,11 +355,512 @@ header.on .gnb ul.inner.on {top: 60px;}
     50%{transform: scale(0.4); opacity: 0;}
 }
 
+
+/*product*/
+.product-list-container {
+    width: 95%;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-list {
+    display: grid;
+    margin: 30px 0 80px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.items img {
+    object-fit: cover;
+}
+
+#items-name {
+    margin: 5px;
+}
+
+#items-price {
+    margin: 5px;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+table td {
+    width: 300px;
+    padding: 10px;
+    margin:0 auto;
+    border-bottom: 1px solid lightgray;
+}
+
+.wrapproduct {
+    display:grid;
+    place-items:center;
+    grid-template-columns:repeat(Auto-fit,minmax(120px, 1fr, 1fr));
+    margin:0 auto;
+
+    height: 400px;
+    left:20px;
+    text-align:center;
+}
+
+.prodcont {
+    width: 500px;
+    height: 100px;
+}
+.prodpic{
+    width: 90%;
+}
+
+.sub {
+    font-size: 11pt;
+}
+#fon {
+    color: rgb(15, 168, 81);
+    font-size: 14pt;
+}
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.button {
+    width:100px;
+    background-color: #f8585b;
+    border: none;
+    color:#fff;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: blue;
+}
 /* footer */
 footer {background: #191a1a; padding: 30px 60px; color: #666;}
 footer ul {clear: both; margin-bottom: 10px; overflow: hidden;}
 footer ul:first-child {font-weight: bold; color: #aaa; font-size: 15px;}
 footer ul li {float: left; margin-right: 20px;}
-footer p {clear: both;font-family: 'Sans-serif', cursive; letter-spacing: 1px; font-size: 15px; text-transform: lowercase;}
+footer p {clear: both;font-family: 'Bebas Neue', cursive; letter-spacing: 1px; font-size: 15px;}
 
 
+            a {
+                text-decoration: none;
+                color: #2997ff;
+            }
+            .aapl-body-link a {
+                color: #333333 !important;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+
+            a[x-apple-data-detectors],
+            a[x-apple-data-detectors]:hover,
+            a[x-apple-data-detectors]:link {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            body {
+                width: 100% !important;
+                background-color: #161617;
+            }
+            h1,
+            h2 {
+                margin: 0;
+                border: 0;
+                font-weight: normal;
+            }
+            img {
+                -webkit-touch-callout: none;
+            }
+            .m-legal,
+            .mobile,
+            td {
+                color: #ffffff;
+                font-family: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;
+                font-size: 21px;
+                font-weight: normal;
+                line-height: 28px;
+                text-rendering: optimizelegibility;
+                -webkit-font-smoothing: antialiased;
+            }
+            p {
+                margin: 0;
+            }
+
+            sup {
+                font-size: 0.65em;
+                line-height: 0;
+                position: relative;
+            }
+
+            #aapl-footer *:link,
+            .m-footer *:link {
+                color: #555555;
+            }
+            #aapl-footer .f-links-legal,
+            .m-footer .f-links-legal {
+                color: #424245;
+            }
+
+            #aapl-footer {
+                padding: 17px 0 15px;
+                color: #888888;
+            }
+            #aapl-footer p {
+                font-size: 12px;
+                line-height: 16px;
+                margin: 0 0 0.8em;
+            }
+            .f-legal {
+                font-size: 12px;
+                line-height: 16px;
+            }
+            .f-legal p {
+                margin: 0 0 9px;
+            }
+            .f-complete {
+                color: #6e6e73;
+                font-size: 12px;
+                line-height: 16px;
+            }
+            .f-links-shop {
+                border-bottom: 1px solid #444444 !important;
+                color: #444444;
+                font-size: 14px;
+                line-height: 18px;
+
+                padding: 15px 0 16px;
+                text-align: center;
+            }
+            .f-links-legal {
+                color: #444444;
+            }
+            .f-links-legal a {
+                color: #555555;
+            }
+            .f-legal a,
+            .f-legal a:hover,
+            .f-legal a:link,
+            .f-legal a:visited,
+            .f-links-shop a,
+            .f-links-shop a:hover,
+            .f-links-shop a:link,
+            .f-links-shop a:visited {
+                color: #a1a1a6;
+            }
+            .f-footnotes p {
+                color: #888888;
+                font-size: 12px;
+                line-height: 16px;
+                margin-bottom: 9px;
+            }
+
+            @media only screen and (max-device-width: 568px) {
+                body {
+                    background-color: #161617;
+                }
+                h1 {
+                    margin: 0 0 13px;
+                }
+                h2 {
+                    padding: 45px 0 14px;
+                }
+                sup {
+                    font-size: 0.55em;
+                }
+                .aapl-desktop {
+                    display: none;
+                }
+                .mobile {
+                    background-color: #161617;
+                    display: block !important;
+                    font-family: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;
+                    font-size: 17px;
+                    line-height: 25px;
+                    margin: 0 auto;
+                    max-height: inherit !important;
+                    overflow: visible !important;
+                    width: 100% !important;
+                    -webkit-text-size-adjust: none !important;
+                }
+                .m-gradient {
+                    background-color: #161617;
+                    background: linear-gradient(#000000 55%, #161617);
+                }
+                .m-container {
+                    max-width: 414px !important;
+                    margin: 0 auto;
+                }
+                p.m-cta {
+                    margin: 15px 0;
+                }
+                p.m-cta a {
+                    display: inline-block;
+                }
+                .m-gutter {
+                    margin: 0 6.25%;
+                }
+                .m-width {
+                    max-width: 414px;
+                    padding: 0 6.25%;
+                    margin: 0 auto;
+                }
+                .m-logo img {
+                    padding: 18px 0;
+                }
+                .m-hero {
+                    background-color: #000000;
+                }
+                .m-hero a,
+                img {
+                    margin: 0 auto;
+                }
+                .m-hero p {
+                    text-align: center;
+                }
+                .m-hero-bg-bk {
+                    background-color: #000000;
+                }
+                .m-hero-bg-bk p,
+                a {
+                    margin-bottom: 41px;
+                }
+                .m-hero-img {
+                    background: url("https://images.apple.com/dm/us/19/47C0B0D8-FE42-45B2-AF27-65D675724072/i/m_hero_airpods_2x.jpg") no-repeat top center;
+                    background-size: 414px 266px;
+                    width: 100%;
+                    height: 266px;
+                }
+                .m-tiles {
+                    max-width: 414px;
+                    padding: 0 10px;
+                    margin: 0 auto;
+                }
+                .m-tile {
+                    background-color: #000000;
+                    margin: 0 0 10px;
+                }
+                .m-active-noise-img {
+                    background: url("https://images.apple.com/dm/us/19/47C0B0D8-FE42-45B2-AF27-65D675724072/i/m_active_noise_cancellation_2x.jpg") #000000 no-repeat top center;
+                    background-size: 414px 425px;
+                    height: 425px;
+                }
+                .m-active-noise-img img {
+                    width: 100% !important;
+                    height: 425px;
+                }
+
+                .m-fit-comfort-img {
+                    background: url("https://images.apple.com/dm/us/19/47C0B0D8-FE42-45B2-AF27-65D675724072/i/m_fit_for_every_ear_2x.jpg") #000000 no-repeat top center;
+                    background-size: 414px 343px;
+                    height: 343px;
+                }
+                .m-fit-comfort-img img {
+                    width: 100% !important;
+                    height: 343px;
+                }
+
+                .m-battery-life-img {
+                    background: url("https://images.apple.com/dm/us/19/47C0B0D8-FE42-45B2-AF27-65D675724072/i/m_battery_life_2x.jpg") #000000 no-repeat top center;
+                    background-size: 414px 315px;
+                    height: 315px;
+                }
+                .m-battery-life-img img {
+                    width: 100% !important;
+                    height: 315px;
+                }
+
+                .m-resistant-img {
+                    background: url("https://images.apple.com/dm/us/19/47C0B0D8-FE42-45B2-AF27-65D675724072/i/m_water_resistant_2x.jpg") #000000 no-repeat top center;
+                    background-size: 414px 425px;
+                    height: 425px;
+                }
+                .m-resistant-img img {
+                    width: 100% !important;
+                    height: 425px;
+                }
+
+                .m-transparency-img {
+                    background: url("https://images.apple.com/dm/us/19/47C0B0D8-FE42-45B2-AF27-65D675724072/i/m_transparency_mode_2x.jpg") #000000 no-repeat top center;
+                    background-size: 414px 425px;
+                    height: 425px;
+                }
+                .m-transparency-img img {
+                    width: 100% !important;
+                    height: 425px;
+                }
+
+                .m-effortless-img {
+                    background: url("https://images.apple.com/dm/us/19/47C0B0D8-FE42-45B2-AF27-65D675724072/i/m_effortless_setup_2x.jpg") #000000 no-repeat top center;
+                    background-size: 414px 350px;
+                    height: 350px;
+                }
+                .m-effortless-img img {
+                    width: 100% !important;
+                    height: 350px;
+                }
+
+                .m-wireless-img {
+                    background: url("https://images.apple.com/dm/us/19/47C0B0D8-FE42-45B2-AF27-65D675724072/i/m_wirelless_charging_2x.jpg") #000000 no-repeat top center;
+                    background-size: 414px 300px;
+                    height: 300px;
+                }
+                .m-wireless-img img {
+                    width: 100% !important;
+                    height: 300px;
+                }
+
+                .m-price p {
+                    text-align: center;
+                    margin: 16px auto 50px;
+                }
+                .m-learn p {
+                    text-align: center;
+                    margin: 25px 0 43px;
+                }
+                .m-magic {
+                    text-align: left;
+                    max-width: 246px;
+                    padding: 20px 0;
+                    margin: 0 auto;
+                }
+                .m-magic a {
+                    margin-left: 3px;
+                }
+                .m-magic p {
+                    padding-top: 30px;
+                }
+                .m-magic .cta {
+                    padding-top: 4px;
+                    padding-bottom: 3px;
+                }
+                .img1 img {
+                    padding-top: 54px;
+                    margin-left: 32px;
+                }
+                .img2 img {
+                    padding-top: 50px;
+                    padding-bottom: 12px;
+                }
+                .hear {
+                    text-align: center;
+                    width: 300px;
+                    margin: 0 auto;
+                    padding-bottom: 45px;
+                }
+                .hear img {
+                    margin: 50px auto 15px;
+                }
+                .hear p {
+                    max-width: 300px;
+                    margin: 0 auto;
+                }
+                .h-copy {
+                    margin-bottom: 5px !important;
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+                }
+                li {
+                    font-weight: 600;
+                    list-style-type: none;
+                    margin-bottom: 21px;
+                    margin-left: 0;
+                }
+                .f-complete {
+                    padding: 6px 6.25% 0;
+                }
+                .f-complete a,
+                .f-complete a:visited {
+                    color: #a1a1a6;
+                }
+                .f-complete .address a {
+                    color: #888;
+                }
+                .m-footer {
+                    max-width: 100%;
+                    padding: 0 0 28px;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #6e6e73;
+                    background-color: #1d1d1f;
+                }
+                .m-footer p {
+                    text-align: left;
+                    margin-bottom: 9px;
+                }
+                ul.m-bnav {
+                    color: #a1a1a6;
+                    margin: 0 0 14px;
+                    padding-bottom: 1px;
+                    text-align: center;
+                    border-top: 0 solid #444444;
+                }
+                ul.m-bnav li {
+                    border-bottom: 1px solid #444444;
+                    font-size: 12px;
+                    font-weight: normal;
+                    line-height: 16px;
+                    margin: 0;
+                    padding: 12px 0;
+                }
+                ol li a,
+                ol li a:visited,
+                ul.m-bnav li a,
+                ul.m-bnav li a:visited {
+                    color: #a1a1a6 !important;
+                }
+                ol {
+                    text-align: left;
+                    margin: 0;
+                    padding: 0;
+                }
+                ol li {
+                    position: relative;
+                    list-style-type: decimal;
+                    margin-left: 13px;
+                    margin-bottom: 9px;
+                    font-weight: normal;
+                }
+
+            }
+
+            @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+                div.mobile {
+                    min-width: 375px !important;
+                }
+            }
+            @media only screen and (max-device-width: 320px) {
+                div.mobile {
+                    min-width: 320px !important;
+                }
+                .m-tiles {
+                    padding: 0;
+                }
+            }

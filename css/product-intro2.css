@@ -1,5 +1,6 @@
 @charset "uft-8";
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Noto+Sans+KR&display=swap');
+
 /*reset*/
 *{margin: 0; padding: 0;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
@@ -15,7 +16,7 @@ body {font-family: 'Noto Sans KR', sans-serif; font-size: 14px;}
 .en {font-family: 'Bebas Neue', cursive;}
 
 /*header*/
-header {width: 100%; position: fixed; z-index: 1000; background:#000000;}
+header {width: 100%; position: fixed; z-index: 100; background:#000000;}
 .innerHeader {padding: 0 60px; height: 90px; transition: all 0.3s;}
 .innerHeader .logo {width: 150px; height: 36px; float: left;margin-top: 28px; transition: all 0.3s; }
 .innerHeader .logo a {display: block; width: 100%; height: 100%; position: relative;}
@@ -29,7 +30,6 @@ header {width: 100%; position: fixed; z-index: 100; background:#000000;}
 .innerHeader .logo a img {width: 100%; position: absolute; top:0; left: 0;transition: all 0.3s; }
 .innerHeader .logo a img:nth-child(2) {opacity: 0;}
 */
-
 /*gnb*/
 .gnb {position: absolute; left: 50%; transform: translateX(-50%); width: 800px;}
 .gnb > li {float: left; width: 20%; height: 90px; line-height: 90px; position: relative; transition: all 0.3s;}
@@ -135,7 +135,7 @@ header.on .gnb ul.inner.on {top: 60px;}
 
 /*contents*/
 .contents{position: relative; background: #fff; } 
-.contents .line {display: block; position: absolute; top:0; width: 1px; height: 80%; background: #eee;}
+.contents .line {display: block; position: absolute; top:0; width: 1px; height: 100%; background: #eee;}
 .contents .line.a{left: 25%;}
 .contents .line.b{left: 50%;}
 .contents .line.c{left: 75%;}
@@ -305,7 +305,7 @@ header.on .gnb ul.inner.on {top: 60px;}
 .contents .news .newsList li:first-child a .category {background: #19293d;}
 .contents .news .newsList li a .subject {display: block; font-size: 20px; font-weight: bold; color:#333;}
 .contents .news .newsList li a .date {font-size:18px; color:#999; font-weight: normal; margin:20px; display: block;}
-.contents .news .newsList li a .desc {margin-left: 110px; display: block; text-align: justify; font-size: }
+.contents .news .newsList li a .desc {margin-left: 110px; display: block; text-align: justify; font-size: 25px;}
 
 /*호버효과*/
 .contents .news .newsList li a:hover {background: #fff; box-shadow: 4px 4px 10px rgba(0,0,0,0.2);}
@@ -355,11 +355,114 @@ header.on .gnb ul.inner.on {top: 60px;}
     50%{transform: scale(0.4); opacity: 0;}
 }
 
+
+/*product*/
+.product-list-container {
+    width: 95%;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-list {
+    display: grid;
+    margin: 30px 0 80px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.items img {
+    object-fit: cover;
+}
+
+#items-name {
+    margin: 5px;
+}
+
+#items-price {
+    margin: 5px;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+table td {
+    width: 300px;
+    padding: 10px;
+    margin:0 auto;
+}
+
+.wrapproduct {
+    display:grid;
+    place-items:center;
+    grid-template-columns:repeat(Auto-fit,minmax(120px, 1fr, 1fr));
+    margin:0 auto;
+
+    height: 400px;
+    left:20px;
+    text-align:center;
+}
+
+.prodcont {
+    width: 500px;
+    height: 100px;
+}
+.prodpic{
+    width: 90%;
+}
+
+.sub {
+    font-size: 11pt;
+}
+#fon {
+    color: rgb(15, 168, 81);
+    font-size: 14pt;
+}
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.button {
+    width:100px;
+    background-color: #f8585b;
+    border: none;
+    color:#fff;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: blue;
+}
 /* footer */
 footer {background: #191a1a; padding: 30px 60px; color: #666;}
 footer ul {clear: both; margin-bottom: 10px; overflow: hidden;}
 footer ul:first-child {font-weight: bold; color: #aaa; font-size: 15px;}
 footer ul li {float: left; margin-right: 20px;}
-footer p {clear: both;font-family: 'Sans-serif', cursive; letter-spacing: 1px; font-size: 15px; text-transform: lowercase;}
+footer p {clear: both;float:left;font-family: 'Bebas Neue', cursive; letter-spacing: 1px; font-size: 15px;}
 
 
+            
